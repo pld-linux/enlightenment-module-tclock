@@ -1,6 +1,5 @@
 #
 # TODO:
-# - add pl
 # - investigate the error while loading this module
 #
 %define		_module_name	tclock
@@ -26,9 +25,10 @@ Requires:	enlightenmentDR17
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Engage is a rss displayer based on the Enlightenment Foundation
-Libraries. It currently works as an app-launcher, taskbar and a system
-tray.
+Simple text clock module for E17.
+
+%description -l pl
+Prosty modu³ zegara tekstowego dla E17.
 
 %prep
 %setup -q -n %{_module_name}
